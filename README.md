@@ -74,7 +74,7 @@ terraform plan
 
 # Apply the configuration to deploy the storage account to Azure
 
-terraform apply
+terraform apply --auto-approve
 
 # Destroy the infrastructure when you are finished testing
 

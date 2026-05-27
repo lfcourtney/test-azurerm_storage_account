@@ -17,7 +17,7 @@ variable "location" {
 variable "storage_account_name" {
   description = "The name of the storage account. Must be globally unique, lowercase, 3-24 characters."
   type        = string
-  default     = "storage_account_test"
+  default     = "storageaccounttest"
 }
 
 variable "storage_tier" {

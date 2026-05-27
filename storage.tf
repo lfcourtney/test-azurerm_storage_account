@@ -5,6 +5,8 @@ resource "azurerm_storage_account" "storage" {
   account_tier             = var.storage_tier
   account_replication_type = var.storage_replication
 
+  public_network_access_enabled = false
+
   lifecycle {
     ignore_changes = [
       tags["Atlas_Project"],
