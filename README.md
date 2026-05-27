@@ -38,7 +38,7 @@ It ignores various Tags auto-applied via Policy:
 
 # CONFIGURING VARIABLES
 
-To deploy this infrastructure, you need to provide your personal Azure subscription and sandbox configurations. The variables file `terraform.tfvars` has been provided, containing dummy data; by inputting your own values into this file, you need to specify your Azure subscription and sandbox resource group.
+To deploy this infrastructure, you need to provide your personal Azure subscription and sandbox configurations. To avoid repetition, these instructions use the `terraform.tfvars` variables file, containing dummy data.
 
 1. Initialise the working directory: Before setting up your variables, run the initialisation to download the necessary Azure providers:
 
@@ -46,7 +46,7 @@ To deploy this infrastructure, you need to provide your personal Azure subscript
 terraform init
 ```
 
-2. Fill out the values: Open the `terraform.tfvars` file and update the dummy placeholders with your real environment configuration:
+2. Fill out the values: Create a new file in the project root: `terraform.tfvars`. Copy the dummy content shown below into this file and update the dummy placeholders with your real environment configuration:
 
 ```bash
 Terraform
