@@ -38,7 +38,7 @@ It ignores various Tags auto-applied via Policy:
 
 # CONFIGURING VARIABLES
 
-To deploy this infrastructure, you need to provide your personal Azure subscription and sandbox configurations. The variables file `terraform.tfvars` has been provided, containing dummy data; you need to input your Azure subscription and sandbox resource group.
+To deploy this infrastructure, you need to provide your personal Azure subscription and sandbox configurations. The variables file `terraform.tfvars` has been provided, containing dummy data; by inputting your own values into this file, you need to specify your Azure subscription and sandbox resource group.
 
 1. Initialise the working directory: Before setting up your variables, run the initialisation to download the necessary Azure providers:
 
@@ -52,8 +52,13 @@ terraform init
 Terraform
 subscription_id = "your-actual-subscription-id-here"
 resource_group = "your-sandbox-resource-group-name"
-storage_account_name = "sttfandboxunique01" # Must be globally unique, lowercase, 3-24 characters
 ```
+
+- Note that you can view the current subscription ID using Azure CLI. Run:
+
+  ```bash
+  az account show --query id -o tsv
+  ```
 
 ⚠️ Important: `terraform.tfvars` will now contain your live subscription information. It must never be committed to source control. A `.gitignore` rule is included in this repository to automatically block this file from being pushed to GitHub.
 
