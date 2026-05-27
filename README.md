@@ -80,5 +80,5 @@ terraform apply --auto-approve
 
 # Destroy the infrastructure when you are finished testing
 
-terraform destroy
+terraform destroy --auto-approve
 ```
