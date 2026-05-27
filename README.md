@@ -2,6 +2,8 @@
 
 This solution will deploy an Azure Storage Account into an existing Resource Group.
 
+![](images/ad_storage_account.png)
+
 It ignores various Tags auto-applied via Policy:
 
 - Atlas_Project

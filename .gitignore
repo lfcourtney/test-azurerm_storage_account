@@ -2,4 +2,4 @@
 
 .terraform.lock.hcl
 *.tfvars
-*.tfstate
+*.tfstate*
