@@ -51,7 +51,6 @@ terraform init
 2. Fill out the values: Create a new file in the project root: `terraform.tfvars`. Copy the dummy content shown below into this file and update the dummy placeholders with your real environment configuration:
 
 ```bash
-Terraform
 subscription_id = "your-actual-subscription-id-here"
 resource_group = "your-sandbox-resource-group-name"
 ```
